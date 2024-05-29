@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
 	color: white;
 }
@@ -20,12 +24,12 @@ footer {
 }
 
 .m-container {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 74px);
 	background-color: black;
+	overflow: auto;
 }
 
 .f-container {
-	height: 120px;
 	background-color: darkslateblue;
 }
 
@@ -35,18 +39,30 @@ footer {
 	justify-content: center;
 }
 
-.col-3 {
-	width: calc(99% / 3 - 1px);
-}
-
 .col-7 {
 	width: calc(100% / 7);
+}
+
+.col-10 {
+	width: 10%;
+	border: 1px solid greenyellow;
+	background-color: darkgrey;
+}
+
+.col-20 {
+	width: 20%;
+	border: 1px solid greenyellow;
+}
+
+.col-70 {
+	width: 70%;
+	border: 1px solid greenyellow;
 }
 
 /*CONTENT*/
 
 .m-content {
-	height: 100px;
+	height: 500px;
 	background-color: red;
 	border: 1px solid white;
 	margin: 5px;
@@ -54,7 +70,42 @@ footer {
 }
 
 .f-content {
-	height: 100px;
-	background-color: yellow;
-	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.fc-center-buttons {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.icon {
+	font-size:30px ;
+	display: inline-block;
+}
+
+.angle-up {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.button p {
+	font-size: 15px;
+}
+
+.icon-green {
+	color: greenyellow;
+}
+
+.fc-left p {
+	color: red;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
